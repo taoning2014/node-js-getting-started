@@ -1,0 +1,17 @@
+{
+  "name": "public",
+  "version": "0.0.0",
+  "homepage": "https://github.com/taoning2014/node-js-getting-started",
+  "authors": [
+    "Ning",
+    "Tao <tao.ning@priceline.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
