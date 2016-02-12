@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Girl's Generation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" >
+  <link rel="stylesheet" href="css/font.css" >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+	  background-color: #f2f2f2;
+      padding: 25px;
+    }
+<!-- This is the style code for swipe function -->
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  } 
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Girl's Generation</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li>
+          <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </li>
+    </div>
+
+    
+
+  </div>
+</nav>
+
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="img/1.jpg" alt="Chania" style="width:100%">
+      </div>
+
+      <div class="item">
+        <img src="img/2.jpg" alt="Chania" style="width:100%">
+      </div>
+    
+      <div class="item">
+        <img src="img/3.jpg" alt="Flower" style="width:100%">
+      </div>
+
+      <div class="item">
+        <img src="img/4.jpg" alt="Flower" style="width:100%">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+  
+<div class="container-fluid bg-3 text-center">    
+  <h3>Complete Member List</h3><br>
+  <div class="row">
+    <div class="col-sm-3">
+      <p>Taeyeon Kim</p>
+      <img id="taeyeon" src="img/taeyeon.JPEG" class="img-rounded" style="width:100%" alt="taeyeon">
+      <p></p>
+      <button onclick="window.open ('https://en.wikipedia.org/wiki/Kim_Tae-yeon');" type="button" class="btn btn-info btn-block">Wikipedia</button>
+    </div>
+    <div class="col-sm-3"> 
+      <p>Tiffany Hwang</p>
+      <img id="tiffany" src="img/tiffany.JPEG" class="img-rounded" style="width:100%" alt="tiffany">
+      <p></p>
+      <button onclick="window.open ('https://en.wikipedia.org/wiki/Tiffany_Hwang');" type="button" class="btn btn-info btn-block">Wikipedia</button>
+    </div>
+    <div class="col-sm-3"> 
+      <p>Yoona Im</p>
+      <img id="yoona" src="img/yoona.JPEG" class="img-rounded" style="width:100%" alt="yoona">
+      <p></p>
+      <button onclick="window.open ('https://en.wikipedia.org/wiki/Im_Yoona');" type="button" class="btn btn-info btn-block">Wikipedia</button>
+    </div>
+    <div class="col-sm-3">
+      <p>Ju-hyun Seo</p>
+      <img id="seohyun" src="img/seohyun.JPEG" class="img-rounded" style="width:100%" alt="seohyun">
+      <p></p>
+      <button onclick="window.open('https://en.wikipedia.org/wiki/Seohyun');" type="button" class="btn btn-info btn-block">Wikipedia</button>
+    </div>
+  </div>
+</div><br>
+
+<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+    <div class="col-sm-3">
+      <p>Yuri Kwon</p>
+      <img id="yuri" src="img/yuri.JPEG" class="img-rounded" style="width:100%" alt="yuri">
+      <p></p>
+      <button onclick="window.open('https://en.wikipedia.org/wiki/Kwon_Yuri');" type="button" class="btn btn-info btn-block">Wikipedia</button>
+    </div>
+    <div class="col-sm-3"> 
+      <p>Hyo-yeon Kim</p>
+      <img id="hyoyeon" src="img/hyoyeon.JPEG" class="img-rounded" style="width:100%" alt="hyoyeon">
+      <p></p>
+      <button onclick="window.open('https://en.wikipedia.org/wiki/Kim_Hyo-yeon');" type="button" class="btn btn-info btn-block">Wikipedia</button>
+    </div>
+    <div class="col-sm-3"> 
+      <p>Sunny</p>
+      <img id="sunny" src="img/sunny.JPEG"  class="img-rounded" style="width:100%" alt="sunny">
+      <p></p>
+      <button onclick="window.open('https://en.wikipedia.org/wiki/Sunny_(singer)');" type="button" class="btn btn-info btn-block">Wikipedia</button>
+    </div>
+    <div class="col-sm-3">
+      <p>Sooyoung Choi</p>
+      <img id="sooyoung" src="img/sooyoung.JPEG"  class="img-rounded" style="width:100%" alt="sooyoung">
+      <p></p>
+      <button onclick="window.open('https://en.wikipedia.org/wiki/Choi_Soo-young');" type="button" class="btn btn-info btn-block">Wikipedia</button>
+    </div>
+  </div>
+</div><br><br>
+
+<hr></hr>
+
+
+
+<footer class="container-fluid text-left">
+  <p>No copyright infringement is intended. <br>
+We do not own any of the pictures and videos that we’re posting unless stated otherwise. This blog does not meant to violate the rights held by the source, SNSD fansites, nor any other licensee, nor is any disrespect intended. <br>
+Please contact us if you want your images and/or videos to be removed, if your watermark is missing or if you want to be more specifically credited. Also applies to all contents of this blog.</p>
+</footer>
+
+</body>
+</html>
